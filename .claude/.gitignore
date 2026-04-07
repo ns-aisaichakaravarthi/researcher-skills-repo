@@ -1,0 +1,45 @@
+# Claude Code configuration
+# Never commit credentials or local settings
+.claude/settings.json
+~/.claude/settings.json
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+*.venv/
+.venv/
+__pycache__/
+*.egg-info/
+
+# Build artifacts
+dist/
+build/
+*.pyc
+*.o
+
+# Temporary files
+*.tmp
+*.log
+*.pid
+
+# MCP Reports (generated at runtime)
+# Note: ~/Documents/mcp-reports/ is outside repo and safe
+# This is just for any local test reports
+test_reports/
+
+# Historical Documentation (local reference only)
+# Archive contains historical records from optimization process
+# Not needed for production or users
+archive/

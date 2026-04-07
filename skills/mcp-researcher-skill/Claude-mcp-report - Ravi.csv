@@ -1,0 +1,579 @@
+Category,Attribute,MCP server 1,MCP server 2,MCP server 3,MCP server 4,MCP server 5,MCP server 6,MCP server 7,MCP server 8,MCP server 9,MCP server 10,MCP server 11,MCP server 12,MCP server 13,MCP server 14,MCP server 15
+MCP server name,,Chroma MCP ,BioMCP MCP,Microsoft Learn MCP,Terraform Registry MCP ,Nexus MCP,Svelte MCP,ClickHouse MCP,Exotel MCP,Shutter Network MCP,Baidu Maps MCp,Panther Labs MCP,Last9 Observability MVP,QuantConnect MCP,Twilio MCP,CUA MCP 
+MCP Info,Description,"Chroma MCP Server is an open-source embedding database integration for LLM applications. Provides vector search, full-text search, metadata filtering, and collection management capabilities. Supports multiple client types (ephemeral in-memory, persistent file-based, HTTP self-hosted, and Chroma Cloud integration) with configurable embedding functions including default, Cohere, OpenAI, Jina, VoyageAI, and Roboflow.","Read-only biomedical search and evidence retrieval across 15+ sources: PubMed, ClinicalTrials.gov, ClinVar, gnomAD, OncoKB, Reactome, UniProt, PharmGKB, OpenFDA, NCBI, Beacon, HGNC, MeSH, Mondo, and Semantic Scholar. One query grammar searches literature, pivots across entities (genes, variants, drugs, diseases, proteins, pathways, articles), analyzes studies locally with SVG charts, and follows paper trails through citations and recommendations.","Official Microsoft MCP server providing semantic search and fetch of Microsoft technical documentation and code samples. Enables AI assistants to access current Microsoft Learn content without hallucinations. Three tools: microsoft_docs_search (search docs), microsoft_docs_fetch (convert pages to markdown), microsoft_code_sample_search (locate code examples).","Model Context Protocol server providing seamless integration with Terraform Registry APIs and HCP Terraform/Terraform Enterprise workspace management. Enables advanced automation for Infrastructure as Code (IaC) development with support for provider/module/policy search, workspace operations, and run management.","Grafbase Nexus is an MCP server aggregation and routing platform that connects multiple MCP servers (STDIO, SSE, HTTP) through a single endpoint. It provides unified MCP aggregation, LLM provider routing (OpenAI, Anthropic, Google, AWS Bedrock), context-aware tool search, and protocol support with OAuth2 and TLS security.","Official Svelte MCP server providing documentation, code analysis, and Svelte playground generation. Offers intelligent code fixing via svelte-autofixer tool, documentation search across Svelte 5 and SvelteKit sections, and interactive playground link generation for component testing.","MCP server providing native integration with ClickHouse for executing SQL queries, listing databases/tables, and querying embedded chDB instances. Supports both read-only mode and optional write operations with safety protections for destructive operations.","ExotelMCP provides seamless integration between Claude AI and Exotel's communication APIs for SMS and voice calling services. Includes DLT-compliant messaging, voice call management, call flow integration, and quick audio tools for playback and download.","A Model Context Protocol server providing timelock encryption capabilities using the Shutter Network on Gnosis Chiado testnet.
+ Enables encrypting messages that remain sealed until a designated future time arrives, using threshold cryptography via the decentralised Shutter keyper network.
+ Supports natural language time expressions (""3 months from now""), Unix timestamps, and absolute dates for unlock time specification.
+ Alpha software — intended for experimental use on testnet only; not production-ready.","Baidu Map MCP Server is a fully MCP-compliant open-source Location-Based Service (LBS) solution powered by Baidu Maps — the first map provider in China to support MCP. Provides geocoding, reverse geocoding, POI search, route planning (driving/walking/cycling/transit), real-time weather, IP location, and road traffic via standardized MCP interfaces. Available as Python (PyPI) and TypeScript (npm) SDKs for local STDIO use, or via hosted SSE/StreamableHttp endpoints at mcp.map.baidu.com for low-latency remote access.","Panther MCP Server enables AI agents to write and tune security detections in Python, interactively query security logs via natural language SQL, and triage/comment/resolve alerts within the Panther SIEM platform. Built with FastMCP 2.14.0 and supports both STDIO and StreamableHttp (Docker or UVX) transport. Provides 35+ tools spanning alert management, data lake queries, detection management, scheduled queries, log source monitoring, user/role administration, metrics, and global helpers.","MCP server enabling AI agents to integrate real-time production observability into development environments.
+ Supports hosted StreamableHttp (zero-install) and self-hosted STDIO modes.
+ Provides querying for exceptions, service metrics, Prometheus data, distributed traces, log drop rules, and alert configurations.
+ Official server maintained by Last9 with OAuth browser auth for hosted and token-based auth for self-hosted deployments.","Official Python MCP server enabling AI systems to interact with QuantConnect's cloud algorithmic trading platform.
+ Provides 64 tools covering project management, file operations, compilation, backtesting, live trading deployment, and optimization.
+ Runs via Docker container using STDIO transport; multi-agent support via unique AGENT_NAME environment variable.
+ Requires QuantConnect User ID and API token for authentication to the QuantConnect REST API.","Official MCP server exposing all of Twilio's public APIs to AI assistants and tools.
+ Provides access to 40+ Twilio services including messaging, voice, video, verification, account management, and serverless functions.
+ Tools are auto-generated from Twilio's OpenAPI specifications; also includes a generic openapi-mcp-server for custom OpenAPI specs.
+ Requires Twilio Account SID, API Key, and API Secret for authenticating to the Twilio platform.","MCP server for Computer-Use Agent (CUA) enabling AI to control full desktop environments on macOS, Linux, and Windows.
+ Provides tools for executing single or multi-step computer-use agent tasks, capturing screenshots, and managing session resources.
+ Integrates with MCP clients including Claude Desktop and Cursor; requires Anthropic API key for the underlying AI model.
+ Open-source component of the trycua/cua infrastructure for training and evaluating computer-use AI agents."
+MCP Info,Git Repo Version,v0.2.6 [ Referred from Tags/Releases ],v0.8.19,No releases published (using main branch),v0.4.0,v0.6.0,0.0.1,v0.2.0,0.0.1-SNAPSHOT,N/A (no releases or tags; README references version 2.1.0),v0.2.4,v2.3.1,v0.5.1,v0.0.10,v0.0.3,v0.1.16
+MCP Info,Category,Data Retrieval,Biomedical Data Retrieval,Developer Tools,Developer Tools,Developer Tools,Developer Tools,Data Retrieval,Communication & Messaging,Developer Tools,Data Retrieval,Developer Tools,Developer Tools,Developer Tools,Developer Tools,Developer Tools
+MCP Info,GitHub Repository,https://github.com/chroma-core/chroma-mcp,https://github.com/genomoncology/biomcp,https://github.com/microsoftdocs/mcp,https://github.com/hashicorp/terraform-mcp-server,https://github.com/grafbase/nexus,https://github.com/sveltejs/ai-tools,https://github.com/ClickHouse/mcp-clickhouse,https://github.com/exotel/ExotelMCP,https://github.com/shutter-network/shuttermcp,https://github.com/baidu-maps/mcp,https://github.com/panther-labs/mcp-panther,https://github.com/last9/last9-mcp-server,https://github.com/quantconnect/mcp-server,https://github.com/twilio-labs/mcp,https://github.com/trycua/cua
+MCP Info,Endpoint URL,N/A,N/A,https://learn.microsoft.com/api/mcp,NA,http://localhost:8000/mcp,https://mcp.svelte.dev/mcp,N/A,http://ec2-13-127-242-200.ap-south-1.compute.amazonaws.com:8080/mcp,https://shutter-mcp-b76e270d48c5.herokuapp.com/mcp,https://mcp.map.baidu.com/mcp,N/A,https://app.last9.io/api/v4/organizations/<org_slug>/mcp,N/A,N/A,N/A
+Distribution Type,Official,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes
+Distribution Type,Community,No,No,No ,No,No,No,No,No,Yes,No,No,No,No,No,No
+MCP Protocol Version,2025-11-25,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No
+MCP Protocol Version,2025-06-18,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Yes,Yes,No,No,No
+MCP Protocol Version,2025-03-26,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No
+MCP Protocol Version,2024-11-05,No,No,No,No,No,No,No,No,Yes,Yes,No,No,Yes,Yes,Yes
+Pricing,Free,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+Pricing,Paid,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No
+Hosting Provider,SaaS Vendor,No,No,Yes,No,No,Yes,No,No,No,Yes,No,Yes,No,No,No
+Hosting Provider,3rd Party SaaS,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No
+Hosting Provider,GitHub,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+Hosting Provider,GitLab,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No
+Hosting Provider,Bitbucket,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No
+Hosting Provider,SourceHut/Gitea/Gogs,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No
+Authentication,OAuth 2.1 - Authorization Code Flow,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No
+Authentication,OAuth 2.1 - Client Credentials Flow,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No
+Authentication,Bearer Token,No,No,No,Yes,Yes,Yes,Yes,Yes,No,No,Yes,Yes,No,No,No
+Authentication,Personal Access Token,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No
+Authentication,API Token,Yes,Yes,No,Yes,Yes,Yes,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes
+Data Protection,TLS 1.3,No,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,No,No,No,No,No
+Data Protection,TLS 1.2,Yes,No,Yes,No,Yes,No,No,No,Yes,No,No,Yes,No,No,No
+Data Protection,Lower versions or no encryption,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No
+Transport Protocol,STDIO,Yes,Yes,No,Yes,Yes,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes
+Transport Protocol,HTTP/SSE,No,No,Yes,No,Yes,No,Yes,Yes,Yes,Yes,No,No,No,No,No
+Transport Protocol,StreamableHttp,No,Yes,No,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,No,No,No
+Transport Protocol,FastAPI,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No
+Tools Operations,Read-only operations,No,Yes,Yes,No,No,Yes,No,No,No,Yes,No,No,No,No,No
+Tools Operations,Read-only and/or update operations,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,No,No
+Tools Operations,Read-only update and/or delete operations,Yes,No,No,Yes,Yes,No,Yes,Yes,No,No,No,No,Yes,Yes,Yes
+Deployment Approach,Local,Yes,Yes,No,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+Deployment Approach,Container,Yes,Yes,No,Yes,Yes,No,Yes,No,Yes,No,Yes,Yes,Yes,No,No
+Deployment Approach,Remote,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,No,No,No
+Compliance & Certifications,HIPAA,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No
+Compliance & Certifications,GDPR,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No
+Compliance & Certifications,SOC 2,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No
+Compliance & Certifications,FedRAMP,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No
+Capabilities,Tools,Yes,NA,NA,Yes,NA,Yes,Yes,NA,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+Capabilities,Resources,No,NA,NA,Yes,NA,Yes,No,NA,No,No,Yes,No,No,No,No
+Capabilities,Prompts,No,NA,NA,No,NA,Yes,Yes,NA,No,No,No,No,No,No,No
+Capabilities,Sampling,No,NA,NA,No,NA,No,No,NA,No,No,No,No,No,No,No
+Capabilities - Tools,detailed_info,"""Search & Query Utilities
+  • chroma_list_collections – List all collection names in the Chroma database with pagination support
+  • chroma_peek_collection – Peek at documents in a Chroma collection
+  • chroma_get_collection_info – Get information about a Chroma collection
+  • chroma_get_collection_count – Get the number of documents in a Chroma collection
+  • chroma_query_documents – Query documents from a Chroma collection with advanced filtering and semantic search
+  • chroma_get_documents – Get documents from a Chroma collection with optional filtering and ID-based retrieval
+
+Collection Management
+  • chroma_create_collection – Create a new Chroma collection with configurable HNSW parameters
+  • chroma_modify_collection – Modify a Chroma collection's name or metadata
+  • chroma_fork_collection – Fork a Chroma collection
+
+Data Operations
+  • chroma_add_documents – Add documents to a Chroma collection with embedding support
+  • chroma_update_documents – Update documents in a Chroma collection""","Biomedical Search & Discovery
+  • biomcp – Run read-only BioMCP commands for biomedical search, detail retrieval, discovery, enrichment, and study analytics. Allowed commands: search/get/helpers/study/list/version/health/batch/enrich/discover/skill","Search & Query Utilities
+  • microsoft_docs_search – Semantic search across official Microsoft technical documentation, returns up to 10 content chunks with title, URL, and excerpt
+  • microsoft_code_sample_search – Search for code snippets and examples in Microsoft Learn, returns up to 20 high-quality code samples with optional language filtering
+ 
+
+ Content Retrieval
+  • microsoft_docs_fetch – Fetch and convert full Microsoft documentation pages to markdown format","""Search & Query Utilities
+  • search_providers – Search Terraform providers in public registry
+  • get_provider_details – Get detailed provider information
+  • get_latest_provider_version – Get latest provider version
+  • get_provider_capabilities – Get provider capabilities
+  • search_modules – Search Terraform modules
+  • get_module_details – Get module details
+  • get_latest_module_version – Get latest module version
+  • search_policies – Search Terraform policies
+  • get_policy_details – Get policy details
+  • search_private_modules – Search private registry modules
+  • get_private_module_details – Get private module details
+  • search_private_providers – Search private registry providers
+  • get_private_provider_details – Get private provider details
+
+Project Management
+  • list_terraform_orgs – List Terraform organizations
+  • list_terraform_projects – List Terraform projects
+  • list_workspaces – List workspaces in an organization
+  • get_workspace_details – Get workspace details
+  • list_runs – List runs in a workspace
+  • get_run_details – Get run details
+  • list_workspace_variables – List workspace variables
+  • list_variable_sets – List variable sets
+  • list_stacks – List stacks
+  • get_stack_details – Get stack details
+  • list_workspace_policy_sets – List policy sets attached to workspaces
+
+Team & Workspace Metadata
+  • create_workspace_tags – Create workspace tags
+  • read_workspace_tags – Read workspace tags
+  • get_token_permissions – Get API token permissions""","Search & Query Utilities
+  • search – Context-aware tool search using fuzzy matching and relevance scoring across all connected MCP servers with keywords
+ 
+
+ Admin & Miscellaneous
+  • execute – Execute any discovered tool from downstream MCP servers with parameter validation and comprehensive error handling","Documentation & Analysis
+  • get_documentation – Retrieve specific Svelte 5 and SvelteKit documentation sections by title or file path; supports searching by keywords and multiple sections
+  • list_sections – List all available documentation sections with use_cases metadata to identify relevant documentation for specific tasks
+  • svelte_autofixer – Analyze and fix Svelte components; validates syntax, provides compilation issues, ESLint warnings, and auto-fixer suggestions
+  • playground_link – Generate shareable Svelte Playground links with component code included for interactive testing","Search & Query Utilities
+  • run_query – Execute SQL queries on ClickHouse cluster (read-only by default, write access optional)
+  • list_databases – List all databases on ClickHouse cluster
+  • list_tables – List tables in a database with pagination support
+  • run_chdb_select_query – Execute SQL queries using chDB embedded ClickHouse engine
+ 
+
+ Embedded Query Engine
+  • run_chdb_select_query – Query data directly from files, URLs, and databases without ETL via chDB","Communication Services
+  • sendSmsToUser – Send individual SMS messages with DLT compliance
+  • sendVoiceCallToUser – Initiate voice calls to phone numbers
+  • outgoingCallToConnectNumber – Connect two numbers in a voice call
+  • connectNumberToCallFlow – Route calls to predefined Exotel call flows
+  • sendMessageToBulkNumbers – Send same SMS to multiple recipients
+  • sendDynamicBulkSms – Send personalized SMS to multiple recipients
+ 
+
+ Status & Tracking
+  • getSmsCallbacks – Fetch SMS delivery status and callback records
+  • getVoiceCallCallbacks – Retrieve voice call status records
+  • searchVoiceCallbacksByNumber – Search voice callbacks by phone number
+  • getCallDetails – Get detailed information for specific calls
+  • getBulkCallDetails – Fetch bulk voice call details by from number
+  • getNumberMetadata – Retrieve metadata for phone numbers
+ 
+
+ Audio Tools
+  • quickPlayAudio – One-click browser-based audio playback
+  • openAudioPlayer – Open web audio player interface for manual control
+  • downloadAudioQuick – Get direct download links for audio files","Search & Query Utilities
+  • get_current_time – Return current UTC timestamp
+  • get_unix_timestamp – Convert natural language or date expressions to Unix timestamp
+  • check_decryption_status – Verify whether an encrypted message has reached its unlock time
+  • explain_timelock_encryption – Provide educational material about timelock encryption methodology
+ 
+
+ Other
+  • timelock_encrypt – Encrypt a message with a future-based timelock using Shutter Network threshold cryptography
+  • decrypt_timelock_message – Retrieve plaintext from a sealed message once its unlock time has passed","""Search & Query Utilities
+  • map_geocode – Convert address to geographic coordinates
+  • map_reverse_geocode – Get address, region, and POI info from coordinates
+  • map_search_places – Search for global POIs by keyword, type, region, or within a radius
+  • map_place_details – Get detailed info for a POI by its unique ID
+  • map_directions_matrix – Batch route planning for multiple origins/destinations (driving, walking, cycling)
+  • map_directions – Plan routes between two points (driving, walking, cycling, transit)
+  • map_weather – Query real-time and forecast weather by region or coordinates
+  • map_ip_location – Locate city and coordinates by IP address
+  • map_road_traffic – Query real-time traffic conditions for roads or regions
+  • map_poi_extract – Extract POI info from free text (requires advanced permission)""","""Issue Management
+  • add_alert_comment – Add a comment to a Panther alert
+  • start_ai_alert_triage – Start AI-powered triage analysis for an alert with intelligent insights
+  • get_ai_alert_triage_summary – Retrieve the latest AI triage summary for a specific alert
+  • get_alert – Get detailed information about a specific alert
+  • get_alert_events – Get a sampling of events for a given alert
+  • list_alerts – List alerts with comprehensive filtering options (date range, severity, status)
+  • bulk_update_alerts – Bulk update multiple alerts with status, assignee, and/or comment changes
+  • update_alert_assignee – Update the assignee of one or more alerts
+  • update_alert_status – Update the status of one or more alerts
+  • list_alert_comments – List all comments for a specific alert
+
+Search & Query Utilities
+  • query_data_lake – Execute SQL queries against Panther’s data lake with synchronous results
+  • get_table_schema – Get schema information for a specific table
+  • list_databases – List all available data lake databases in Panther
+  • list_database_tables – List all available tables for a specific database
+  • get_alert_event_stats – Analyze patterns across alerts by aggregating event data into time-based statistics
+  • list_scheduled_queries – List all scheduled queries with pagination support
+  • get_scheduled_query – Get detailed information about a specific scheduled query
+  • list_log_sources – List log sources with optional filters (health status, log types, integration type)
+  • get_http_log_source – Get detailed information about a specific HTTP log source
+  • list_global_helpers – List global helper functions with filtering options
+  • get_global_helper – Get detailed information and complete Python code for a global helper
+  • list_data_models – List data models that control UDM mappings in rules
+  • get_data_model – Get detailed information about a specific data model
+  • list_log_type_schemas – List available log type schemas with optional filters
+  • get_log_type_schema_details – Get detailed information for specific log type schemas
+  • get_rule_alert_metrics – Get metrics about alerts grouped by rule
+  • get_severity_alert_metrics – Get metrics about alerts grouped by severity
+  • get_bytes_processed_metrics – Get data ingestion metrics by log type and source
+
+Admin & Miscellaneous
+  • list_detections – List detections with comprehensive filtering (type, name, severity, tags, destinations)
+  • get_detection – Get detailed information about a specific detection including body and tests
+  • disable_detection – Disable a detection by setting enabled to false
+
+Team & Workspace Metadata
+  • list_users – List all Panther user accounts with pagination support
+  • get_user – Get detailed information about a specific user
+  • get_permissions – Get the current user’s permissions
+  • list_roles – List all roles with filtering options (name search, role IDs, sort direction)
+  • get_role – Get detailed information about a specific role including permissions""","Search & Query Utilities
+  • get_exceptions – Retrieve production exceptions for a service
+  • get_service_summary – Get high-level summary of a service
+  • get_service_environments – List environments for a service
+  • get_service_performance_details – Fetch detailed performance metrics for a service
+  • get_service_operations_summary – Summarize operations for a service
+  • get_service_dependency_graph – Retrieve the dependency graph of a service
+  • prometheus_range_query – Execute a Prometheus range query
+  • prometheus_instant_query – Execute a Prometheus instant query
+  • prometheus_label_values – Fetch Prometheus label values
+  • prometheus_labels – List all Prometheus labels
+  • get_logs – Retrieve logs matching query criteria
+  • get_service_logs – Fetch logs for a specific service
+  • get_log_attributes – Get attributes available in logs
+  • get_drop_rules – List configured log drop rules
+  • get_traces – Retrieve distributed traces
+  • get_service_traces – Fetch traces for a specific service
+  • get_trace_attributes – Get attributes available in traces
+  • get_change_events – List change events in the system
+  • get_alert_config – Retrieve alert configuration details
+  • get_alerts – List active alerts
+ 
+
+ Admin & Miscellaneous
+  • add_drop_rule – Create a new log drop rule to filter ingestion","Search & Query Utilities
+  • read_account – Retrieve account details
+  • read_project – Read a specific project
+  • list_projects – List all projects
+  • read_project_collaborators – List collaborators on a project
+  • read_project_nodes – Get compute nodes assigned to a project
+  • read_compile – Read compilation results
+  • read_file – Read a project file
+  • read_backtest – Read backtest results
+  • list_backtests – List all backtests for a project
+  • read_backtest_chart – Retrieve backtest chart data
+  • read_backtest_orders – Get orders from a backtest
+  • read_backtest_insights – Get insights from a backtest
+  • read_optimization – Read optimization results
+  • list_optimizations – List all optimizations
+  • read_live_algorithm – Read a live trading algorithm
+  • list_live_algorithms – List all live trading algorithms
+  • read_live_chart – Get live algorithm chart data
+  • read_live_logs – Retrieve live algorithm logs
+  • read_live_portfolio – Get live portfolio state
+  • read_live_orders – Get live algorithm orders
+  • read_live_insights – Get live algorithm insights
+  • read_object_properties – Get object store item properties
+  • read_object_store_file_job_id – Get job ID for object store file
+  • read_object_store_file_download_url – Get download URL for object store file
+  • list_object_store_files – List all files in object store
+  • read_lean_versions – List available LEAN engine versions
+  • read_mcp_server_version – Get current MCP server version
+  • read_latest_mcp_server_version – Get latest available MCP server version
+  • check_initialization_errors – Check for algorithm initialization errors
+  • estimate_optimization_time – Estimate time for an optimization run
+  • check_syntax – Check code syntax
+  • search_quantconnect – Search QuantConnect documentation
+  • authorize_connection – Authorize a live trading brokerage connection
+ 
+
+ Project Management
+  • create_project – Create a new project
+  • update_project – Update project settings
+  • delete_project – Delete a project
+  • lock_project_with_collaborators – Lock project for multi-user editing
+  • create_project_collaborator – Add a collaborator to a project
+  • update_project_collaborator – Update collaborator permissions
+  • delete_project_collaborator – Remove a collaborator from a project
+  • update_project_nodes – Update compute nodes for a project
+ 
+
+ Other
+  • create_compile – Compile a project
+  • create_file – Create a new file in a project
+  • update_file_name – Rename a project file
+  • update_file_contents – Update file contents
+  • patch_file – Apply a patch to a file
+  • delete_file – Delete a project file
+  • create_backtest – Run a new backtest
+  • update_backtest – Update backtest settings
+  • delete_backtest – Delete a backtest
+  • create_optimization – Create a parameter optimization run
+  • update_optimization – Update an optimization
+  • abort_optimization – Abort a running optimization
+  • delete_optimization – Delete an optimization
+  • create_live_algorithm – Deploy a live trading algorithm
+  • stop_live_algorithm – Stop a live trading algorithm
+  • liquidate_live_algorithm – Liquidate and stop a live algorithm
+  • create_live_command – Send a command to a live algorithm
+  • broadcast_live_command – Broadcast a command to multiple algorithms
+  • upload_object – Upload a file to the object store
+  • delete_object – Delete an object store file
+  • complete_code – AI-assisted code completion
+  • enhance_error_message – Enhance algorithm error messages
+  • update_code_to_pep8 – Format code to PEP 8 standards","Search & Query Utilities
+  • list/fetch operations – List and retrieve resources across 40+ Twilio API services (calls, messages, phone numbers, flows, recordings, conferences, etc.)
+ 
+
+ Other
+  • create/update/delete operations – Full CRUD for communications resources (send messages, make calls, manage phone numbers, configure flows, etc.)
+  Note: Tools are auto-generated from Twilio OpenAPI specs (e.g., Api20100401Message, ServerlessV1Function) covering services including Core API, Chat, Messaging, Voice, Video, Verify, Lookups, Studio, TaskRouter, Sync, Flex, and Intelligence","Search & Query Utilities
+  • screenshot_cua – Take a screenshot of the current screen
+  • get_session_stats – Get statistics about active sessions and resource usage
+ 
+
+ Other
+  • run_cua_task – Run a single Computer-Use Agent task with the given instruction
+  • run_multi_cua_tasks – Run multiple tasks in sequence or concurrently
+  • cleanup_session – Cleanup a specific session and release its resources"
+Capabilities - Resources,detailed_info,No,"BioMCP Overview
+  • biomcp://help – BioMCP command reference and overview (text/markdown)
+ 
+
+ Skill Guides (Pattern: Investigation Workflows)
+  • biomcp://skill/[slug] – Guided investigation patterns and use cases (text/markdown). Examples: discovery workflows, entity pivot guides, study analysis patterns",No,"• /terraform/style-guide – Terraform Style Guide (text/markdown)
+  • /terraform/module-development – Terraform Module Development Guide with 6 sections (text/markdown)",No,"Svelte-Doc-Section
+  • Svelte documentation sections as URI-based resources (svelte://section_name.md) with completion support for section discovery",No,"Voice API Documentation
+  • voice-api-overview – Complete Exotel Voice API reference
+  • voice-connect-numbers – Connect two numbers API documentation
+  • voice-call-flow – Call flow routing API documentation
+  • voice-request-schema – Voice API request JSON schema
+  • voice-response-schema – Voice API response formats
+  • voice-callbacks-doc – Voice callback status events documentation
+  • voice-examples – Voice API usage examples and code samples
+ 
+
+ SMS API Documentation
+  • sms-api-overview – Complete Exotel SMS API reference with DLT compliance
+  • sms-send-api – Single SMS sending API documentation
+  • sms-bulk-api – Bulk messaging API documentation
+  • sms-request-schema – SMS API request JSON schema
+  • sms-response-schema – SMS API response formats
+  • sms-callbacks-doc – SMS callback and delivery status documentation
+  • sms-examples – SMS API usage examples and code samples
+ 
+
+ Error & Reference Resources
+  • error-codes-doc – Complete error codes and troubleshooting guide",No,No,  • config://panther – Panther instance configuration (URL and environment details),No,No,No,No
+Capabilities - Prompts,detailed_info,No,No,No,No,No,"Svelte Task Prompt
+  • svelte_task – System prompt for Svelte development tasks; instructs LLM on available documentation, tool invocation sequencing, and code validation workflow using svelte_autofixer for iterative fixes",• chdb_initial_prompt – Setup instructions and usage guidance for chDB embedded queries,"Communication Workflows
+  • send_sms – Send SMS with DLT template and entity IDs (required: phone_number, message, dlt_template_id, dlt_entity_id)
+  • make_voice_call – Initiate voice call (required: phone_number)
+  • connect_calls – Connect two numbers in voice call (required: from_number, to_number)
+  • connect_call_flow – Route to Exotel call flow (required: app_id, from_number)
+ 
+
+ Bulk Messaging
+  • send_bulk_sms – Send identical SMS to multiple numbers (required: phone_numbers, message)
+  • send_dynamic_bulk_sms – Send personalized SMS to multiple recipients (required: messages_json)
+  • bulk_campaign – Execute bulk campaign with SMS and optional voice (required: campaign_type, recipient_list, sms_message)
+ 
+
+ Status Checking & Information
+  • check_sms_status – Check SMS delivery status (required: phone_number)
+  • check_call_status – Check voice call status (required: phone_number)
+  • get_call_details – Get call details by SID (required: call_sid)
+  • lookup_number_info – Get phone number metadata (required: phone_number)
+ 
+
+ Audio & Playback
+  • quick_play_audio – Play audio in browser (required: audio_url)
+  • open_audio_player – Open web audio player interface
+  • download_audio – Get audio download link (required: audio_url)
+ 
+
+ Advanced Workflows
+  • communication_workflow – Execute complete SMS/voice workflows (required: workflow_type, phone_number)
+  • open_audio_player – Open web-based audio player interface",No,No,No,No,No,No,No
+Capabilities - Sampling,detailed_info,No,No,No,No,"Model Capabilities
+  • LLM Provider Support – Routes to OpenAI, Anthropic, Google Gemini, AWS Bedrock with streaming support and tool calling
+  • Token Counting – Token-based rate limiting with per-user and per-group limits (input tokens only)",No,No,No,No,No,No,No,No,No,No
+Non-Read-Only Tools,detailed_info,"Collection Management
+  • chroma_create_collection – Creates new collection (write operation)
+  • chroma_modify_collection – Modifies collection metadata (write operation)
+  • chroma_delete_collection – Removes collection (delete operation)
+ 
+
+ Document Operations
+  • chroma_add_documents – Adds documents to collection (write operation)
+  • chroma_update_documents – Updates documents content/metadata/embeddings (write operation)
+  • chroma_delete_documents – Removes documents from collection (delete operation)",NA,NA,"Content Management
+  • create_workspace: Create a new Terraform workspace
+  • create_no_code_workspace: Create no-code workspace
+  • update_workspace: Update workspace configuration
+  • create_run: Create a Terraform run
+  • create_workspace_variable: Create workspace variable
+  • update_workspace_variable: Update workspace variable
+  • create_variable_set: Create a variable set
+  • create_variable_in_variable_set: Add variable to set
+ 
+
+ Configuration Tools
+  • delete_workspace_safely: Delete workspace safely
+  • delete_variable_in_variable_set: Delete variable from set
+  • detach_variable_set_from_workspaces: Detach variable set
+  • attach_variable_set_to_workspaces: Attach variable set
+  • attach_policy_set_to_workspaces: Attach policy set
+  • action_run: Apply, discard, or cancel a run","Write Operations
+  • execute: Execute tools from downstream servers that may perform write, update, or delete operations based on the tool definitions",No,"Other Write Operations
+  • run_query: Execute DDL statements (CREATE TABLE, ALTER TABLE) on ClickHouse when CLICKHOUSE_ALLOW_WRITE_ACCESS=true
+  • run_query: Execute DML statements (INSERT, UPDATE, DELETE) on ClickHouse when CLICKHOUSE_ALLOW_WRITE_ACCESS=true
+  • run_query: Execute destructive operations (DROP TABLE, DROP DATABASE, DROP VIEW, DROP DICTIONARY, TRUNCATE TABLE) when both CLICKHOUSE_ALLOW_WRITE_ACCESS=true and CLICKHOUSE_ALLOW_DROP=true are set","Communication Operations
+  • sendSmsToUser: Send SMS messages to individual recipients with DLT compliance
+  • sendVoiceCallToUser: Initiate outgoing voice calls to phone numbers
+  • outgoingCallToConnectNumber: Create bridge between two phone numbers for voice communication
+  • connectNumberToCallFlow: Route incoming or outgoing calls to predefined call flows
+  • sendMessageToBulkNumbers: Dispatch identical messages to multiple phone numbers
+  • sendDynamicBulkSms: Send personalized messages to multiple recipients with different content
+  • quickPlayAudio: Trigger audio playback in browser for immediate audio delivery
+  • downloadAudioQuick: Generate download links for audio file retrieval","Other Write Operations
+  • timelock_encrypt: Encrypt a message with a future-based timelock, registering an identity with Shutter Network and producing ciphertext sealed until the specified unlock time",No,"""Other Write Operations
+  • add_alert_comment: Add a comment to a Panther alert
+  • start_ai_alert_triage: Start AI-powered triage analysis for an alert
+  • bulk_update_alerts: Bulk update multiple alerts with status, assignee, and/or comment
+  • update_alert_assignee: Update the assignee of one or more alerts
+  • update_alert_status: Update the status of one or more alerts
+
+Admin & Miscellaneous
+  • disable_detection: Disable a detection by setting enabled to false""","Configuration Tools
+  • add_drop_rule: Create a new log drop rule to filter log ingestion","Project Management
+  • create_project: Create a new project
+  • update_project: Update project settings
+  • delete_project: Delete a project
+  • lock_project_with_collaborators: Lock project for collaborative editing
+  • create_project_collaborator: Add a collaborator to a project
+  • update_project_collaborator: Update collaborator permissions
+  • delete_project_collaborator: Remove a collaborator from a project
+  • update_project_nodes: Update compute nodes assigned to a project
+ 
+
+ Content Management
+  • create_file: Create a new project file
+  • update_file_name: Rename a project file
+  • update_file_contents: Update the contents of a project file
+  • patch_file: Apply a patch to a project file
+  • delete_file: Delete a project file
+ 
+
+ Import/Export Tools
+  • upload_object: Upload a file to the object store
+  • delete_object: Delete a file from the object store
+ 
+
+ Other Write Operations
+  • create_compile: Compile a project
+  • create_backtest: Run a new backtest
+  • update_backtest: Update backtest settings
+  • delete_backtest: Delete a backtest
+  • create_optimization: Create a parameter optimization run
+  • update_optimization: Update optimization settings
+  • abort_optimization: Abort a running optimization
+  • delete_optimization: Delete an optimization
+  • create_live_algorithm: Deploy a live trading algorithm
+  • stop_live_algorithm: Stop a live trading algorithm
+  • liquidate_live_algorithm: Liquidate and stop a live algorithm
+  • create_live_command: Send a command to a live algorithm
+  • broadcast_live_command: Broadcast command to multiple live algorithms
+  • complete_code: AI-assisted code completion
+  • enhance_error_message: Enhance algorithm error messages
+  • update_code_to_pep8: Format code to PEP 8 standards","Other Write Operations
+  • create/send operations: Create messages, initiate calls, purchase phone numbers, create flows, send notifications
+  • update operations: Update message status, modify phone number configurations, update flow definitions
+  • delete/cancel operations: Delete messages, cancel calls, release phone numbers, delete serverless functions
+  Note: Specific tool names are auto-generated from Twilio OpenAPI specs at runtime","Other Write Operations
+  • run_cua_task: Run a single Computer-Use Agent task with the given instruction
+  • run_multi_cua_tasks: Run multiple tasks in sequence or concurrently
+  • cleanup_session: Cleanup a specific session and release its resources"
+Cost,Per Session,"Total cost:            $0.2314                                                                                                            
+     Total duration (API):  1m 45s                                                                                                             
+     Total duration (wall): 5m 5s                                                                                                              
+     Total code changes:    113 lines added, 0 lines removed                                                                                   
+     Usage by model:                                                                                                                           
+         claude-haiku-4-5:  54.6k input, 7.1k output, 780.2k cache read, 50.5k cache write ($0.2314)","Total cost:            $0.2013
+     Total duration (API):  1m 37s                                                                                                             
+     Total duration (wall): 1h 7m 3s                                                                                                           
+     Total code changes:    95 lines added, 0 lines removed                                                                                    
+     Usage by model:                                                                                                                           
+         claude-haiku-4-5:  3.9k input, 7.3k output, 804.6k cache read, 64.2k cache write ($0.2013)","Total cost:            $0.3620                                                                                                            
+     Total duration (API):  2m 21s                                                                                                             
+     Total duration (wall): 5m 34s                                                                                                             
+     Total code changes:    43 lines added, 0 lines removed                                                                                    
+     Usage by model:                                                                                                                           
+         claude-haiku-4-5:  197.0k input, 8.3k output, 835.7k cache read, 32.0k cache write ($0.3620)  "," Total cost:            $0.3116                                                                                                            
+     Total duration (API):  1m 30s                                                                                                             
+     Total duration (wall): 22m 17s                                                                                                            
+     Total code changes:    81 lines added, 0 lines removed                                                                                    
+     Usage by model:                                                                                                                           
+         claude-haiku-4-5:  4.4k input, 6.5k output, 644.5k cache read, 168.3k cache write ($0.3116)"," Total cost:            $0.2203                                                                                                            
+     Total duration (API):  57s                                                                                                                
+     Total duration (wall): 6m 48s                                                                                                             
+     Total code changes:    49 lines added, 0 lines removed                                                                                    
+     Usage by model:                                                                                                                           
+         claude-haiku-4-5:  3.4k input, 3.6k output, 892.3k cache read, 87.6k cache write ($0.2203) ","  Total cost:            $0.2471                                                                                                            
+     Total duration (API):  1m 52s                                                                                                             
+     Total duration (wall): 10m 8s                                                                                                             
+     Total code changes:    96 lines added, 0 lines removed                                                                                    
+     Usage by model:                                                                                                                           
+         claude-haiku-4-5:  115 input, 8.5k output, 1.2m cache read, 65.5k cache write ($0.2471)                                               
+                                                                                                        ","Total cost:            $0.1793                                                                                                            
+     Total duration (API):  1m 10s                                                                                                             
+     Total duration (wall): 4m 33s                                                                                                             
+     Total code changes:    0 lines added, 0 lines removed                                                                                     
+     Usage by model:                                                                                                                           
+         claude-haiku-4-5:  1.0k input, 4.9k output, 685.2k cache read, 68.1k cache write ($0.1793) ","Total cost:            $0.1892                                                                                                            
+     Total duration (API):  1m 49s                                                                                                             
+     Total duration (wall): 6m 35s                                                                                                             
+     Total code changes:    173 lines added, 0 lines removed                                                                                   
+     Usage by model:                                                                                                                           
+         claude-haiku-4-5:  34 input, 7.1k output, 1.1m cache read, 37.3k cache write ($0.1892)                                                
+                                                                                                ","Total cost:            $0.54                                                                                                              
+     Total duration (API):  4m 29s                                                                                                             
+     Total duration (wall): 8m 19s                                                                                                             
+     Total code changes:    0 lines added, 0 lines removed                                                                                     
+     Usage by model:                                                                                                                           
+        claude-sonnet-4-6:  15 input, 11.5k output, 450.0k cache read, 41.0k cache write ($0.4609)                                             
+         claude-haiku-4-5:  61.8k input, 2.5k output, 0 cache read, 0 cache write ($0.0744)           ","For 2 MCP's:
+
+Total cost:            $1.10
+     Total duration (API):  8m 23s                                                                                                             
+     Total duration (wall): 15m 15s                                                                                                            
+     Total code changes:    0 lines added, 0 lines removed                                                                                     
+     Usage by model:                                                                                                                           
+        claude-sonnet-4-6:  27 input, 30.2k output, 1.2m cache read, 75.3k cache write ($1.10)                                                 
+                                                                                               ","For 2 MCP's:
+
+Total cost:            $1.10
+     Total duration (API):  8m 23s                                                                                                             
+     Total duration (wall): 15m 15s                                                                                                            
+     Total code changes:    0 lines added, 0 lines removed                                                                                     
+     Usage by model:                                                                                                                           
+        claude-sonnet-4-6:  27 input, 30.2k output, 1.2m cache read, 75.3k cache write ($1.10)                                                 
+                                                                                               ","For 4 MCP's:
+
+Total cost:            $1.91                                                                                                              
+     Total duration (API):  13m 50s                                                                                                            
+     Total duration (wall): 17m 21s                                                                                                            
+     Total code changes:    0 lines added, 0 lines removed                                                                                     
+     Usage by model:                                                                                                                           
+        claude-sonnet-4-6:  2.4k input, 49.2k output, 1.5m cache read, 92.3k cache write ($1.55)                                               
+         claude-haiku-4-5:  321.7k input, 7.4k output, 0 cache read, 0 cache write ($0.3586)                ","For 4 MCP's:
+
+Total cost:            $1.91                                                                                                              
+     Total duration (API):  13m 50s                                                                                                            
+     Total duration (wall): 17m 21s                                                                                                            
+     Total code changes:    0 lines added, 0 lines removed                                                                                     
+     Usage by model:                                                                                                                           
+        claude-sonnet-4-6:  2.4k input, 49.2k output, 1.5m cache read, 92.3k cache write ($1.55)                                               
+         claude-haiku-4-5:  321.7k input, 7.4k output, 0 cache read, 0 cache write ($0.3586)                ","For 4 MCP's:
+
+Total cost:            $1.91                                                                                                              
+     Total duration (API):  13m 50s                                                                                                            
+     Total duration (wall): 17m 21s                                                                                                            
+     Total code changes:    0 lines added, 0 lines removed                                                                                     
+     Usage by model:                                                                                                                           
+        claude-sonnet-4-6:  2.4k input, 49.2k output, 1.5m cache read, 92.3k cache write ($1.55)                                               
+         claude-haiku-4-5:  321.7k input, 7.4k output, 0 cache read, 0 cache write ($0.3586)                ","For 4 MCP's:
+
+Total cost:            $1.91                                                                                                              
+     Total duration (API):  13m 50s                                                                                                            
+     Total duration (wall): 17m 21s                                                                                                            
+     Total code changes:    0 lines added, 0 lines removed                                                                                     
+     Usage by model:                                                                                                                           
+        claude-sonnet-4-6:  2.4k input, 49.2k output, 1.5m cache read, 92.3k cache write ($1.55)                                               
+         claude-haiku-4-5:  321.7k input, 7.4k output, 0 cache read, 0 cache write ($0.3586)                "
+,,,,,,,,,,claude-sonnet-4-6 from here.,,,,,,

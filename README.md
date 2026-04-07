@@ -1,19 +1,35 @@
 # researcher-skills-repo -- MCP Researcher Skills
 
-All-in-one MCP server research, deployment, error recovery, and project auditing -- unified into a single fast, efficient skill. Security hardened, token-optimized, 4-gate enforcement.
+MCP skill suite for research, deployment, error recovery, project auditing, and post-research CSV validation. Security hardened, token-optimized, 4-gate enforcement.
 
-**v3.0 Highlights:** SSRF protection, 4-gate enforcement, SSOT architecture, ~37% fewer tokens, zero duplication, 8 learnings, 6 error patterns documented
+**v3.1 Highlights:** SSRF protection, 4-gate enforcement, SSOT architecture, 10 learnings, 18 error patterns documented, post-research CSV validator
 
 ---
 
-## Quick Start
+## Prerequisites
+
+- [Claude Code](https://claude.com/claude-code) (CLI, desktop app, or IDE extension)
+
+---
+
+## Installation
+
+**Step 1:** Clone the repo
 
 ```bash
-git clone https://github.com/aisaichakaravarthi/researcher-skills-repo.git
-cd researcher-skills-repo
+git clone https://github.com/ns-aisaichakaravarthi/researcher-skills-repo.git
 ```
 
-Then use the unified skill:
+**Step 2:** Open Claude Code inside the cloned directory
+
+```bash
+cd researcher-skills-repo
+claude
+```
+
+Claude Code automatically detects `.claude-plugin/plugin.json` and loads both skills. No additional setup needed.
+
+**Step 3:** Verify skills are available
 
 ```bash
 /mcp-researcher-skill "Research the GitHub MCP server"
@@ -21,7 +37,9 @@ Then use the unified skill:
 
 ---
 
-## What It Does
+## Usage
+
+### `/mcp-researcher-skill` -- Research, Deploy, Fix, Audit
 
 | Task | Command |
 |------|---------|
@@ -31,6 +49,14 @@ Then use the unified skill:
 | **Fix Errors** | `/mcp-researcher-skill "The MCP server won't connect"` |
 | **Audit** | `/mcp-researcher-skill "Review the project"` |
 | **Batch** | `/mcp-researcher-skill "Research these MCPs: GitHub, Slack, Linear"` |
+
+### `/mcp-attribute-validator` -- Validate CSV Reports
+
+| Task | Command |
+|------|---------|
+| **Validate** | `/mcp-attribute-validator "~/Documents/mcp-reports/github-mcp-server.csv"` |
+
+Runs 9 rule categories across 6 validation phases. Outputs a structured report with findings, false-positive exclusions, and confidence score.
 
 ---
 
@@ -47,28 +73,31 @@ Then use the unified skill:
 - Protocol version verification before research
 - Security mandate (no credentials in chat, filesystem only)
 - CSV report output to `~/Documents/mcp-reports/`
-- Self-learning via learned-fixes.md (8 error patterns)
+- Self-learning via learned-fixes.md (18 error patterns)
 
 ---
 
-## Project Structure (v3.0)
+## Project Structure
 
 ```
 researcher-skills-repo/
-  CLAUDE.md                              # Project instructions
+  CLAUDE.md                              # Project instructions (auto-loaded)
   README.md                              # This file
-  marketplace.json                       # Marketplace config (v3.0.0)
-  optimization_guide.md                  # Full optimization reference
   .claude-plugin/
-    plugin.json                          # Plugin config (v3.0.0)
+    plugin.json                          # Plugin config — skill discovery
   skills/
     README.md                            # Skills overview
-    mcp-researcher-skill/               # THE SKILL
-      SKILL.md                           # Source of truth (all workflows, rules, gates)
+    mcp-researcher-skill/               # Research skill (source of truth)
+      SKILL.md                           # All workflows, rules, gates
+      Claude-mcp-report - Ravi.csv       # Sample report
+      Claude-mcp-report - Srinath.csv    # Sample report
       references/
-        learned-fixes.md                 # Error case studies (#1-#4, #7-#8)
+        cost-script.py                   # Token cost calculator (Step 8.1)
+        learned-fixes.md                 # Error case studies (#1-#18)
         multi-server.md                  # Batch research orchestration
         csv-example.md                   # CSV formatting reference
+    mcp-attribute-validator/             # Validation skill (quality gate)
+      SKILL.md                           # 9 rule categories, 6 phases
 ```
 
 ---
@@ -92,7 +121,7 @@ Rules are NEVER duplicated across files. Each reference file points to SKILL.md 
 User Input
   |
   v
-/mcp-researcher-skill (Unified Skill)
+/mcp-researcher-skill
   |
   +-- Gate 2: Connection Verification (5 concurrent threads)
   +-- Gate 1: Evidence Ledger (every Yes/No has source proof)
@@ -122,12 +151,12 @@ CSV Report (only after all gates pass)
 |------|---------|
 | `CLAUDE.md` | Project instructions and quick start |
 | `skills/mcp-researcher-skill/SKILL.md` | Complete skill definition (source of truth) |
+| `skills/mcp-attribute-validator/SKILL.md` | CSV validation skill (9 rules, 6 phases) |
 | `skills/mcp-researcher-skill/references/learned-fixes.md` | Error case studies |
 | `skills/mcp-researcher-skill/references/multi-server.md` | Batch research workflow |
 | `skills/mcp-researcher-skill/references/csv-example.md` | CSV formatting reference |
-| `optimization_guide.md` | Full v3.0 optimization reference |
-| `marketplace.json` | Skills metadata and discovery |
+| `skills/mcp-researcher-skill/references/cost-script.py` | Token cost calculator |
 
 ---
 
-Made with Claude Code | Version: 3.0.0 | Last Updated: 2026-03-27 | Status: Production Ready
+Made with Claude Code | Version: 3.1.0 | Last Updated: 2026-04-07 | Status: Production Ready
