@@ -1,13 +1,19 @@
 {
-  "name": "researcher-skills-repo",
-  "version": "3.0.0",
-  "description": "Unified MCP skill for research, deployment, error recovery, and project auditing — optimized for speed and token efficiency",
+  "name": "MCP Researcher Skills",
+  "version": "3.1.0",
+  "description": "MCP skill suite for research, deployment, error recovery, project auditing, and post-research CSV validation",
   "skills": [
     {
       "name": "mcp-researcher-skill",
       "path": "skills/mcp-researcher-skill/SKILL.md",
       "user-invocable": true,
       "command": "/mcp-researcher-skill"
+    },
+    {
+      "name": "mcp-attribute-validator",
+      "path": "skills/mcp-attribute-validator/SKILL.md",
+      "user-invocable": true,
+      "command": "/mcp-attribute-validator"
     }
   ]
 }
