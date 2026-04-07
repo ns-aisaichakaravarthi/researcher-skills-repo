@@ -13,7 +13,7 @@ git clone https://github.com/aisaichakaravarthi/researcher-skills-repo.git
 cd researcher-skills-repo
 ```
 
-Then use the unified skill:
+Then use the skill:
 
 ```bash
 /mcp-researcher-skill "Research the GitHub MCP server"
@@ -57,18 +57,22 @@ Then use the unified skill:
 researcher-skills-repo/
   CLAUDE.md                              # Project instructions
   README.md                              # This file
-  marketplace.json                       # Marketplace config (v3.0.0)
-  optimization_guide.md                  # Full optimization reference
+  marketplace.json                       # Marketplace config (v3.1.0)
   .claude-plugin/
-    plugin.json                          # Plugin config (v3.0.0)
+    plugin.json                          # Plugin config (v3.1.0)
   skills/
     README.md                            # Skills overview
-    mcp-researcher-skill/               # THE SKILL
-      SKILL.md                           # Source of truth (all workflows, rules, gates)
+    mcp-researcher-skill/               # Research skill (source of truth)
+      SKILL.md                           # All workflows, rules, gates
+      Claude-mcp-report - Ravi.csv       # Sample report
+      Claude-mcp-report - Srinath.csv    # Sample report
       references/
-        learned-fixes.md                 # Error case studies (#1-#4, #7-#8)
+        cost-script.py                   # Token cost calculator (Step 8.1)
+        learned-fixes.md                 # Error case studies (#1-#18)
         multi-server.md                  # Batch research orchestration
         csv-example.md                   # CSV formatting reference
+    mcp-attribute-validator/             # Validation skill (quality gate)
+      SKILL.md                           # 9 rule categories, 6 phases
 ```
 
 ---
@@ -122,12 +126,13 @@ CSV Report (only after all gates pass)
 |------|---------|
 | `CLAUDE.md` | Project instructions and quick start |
 | `skills/mcp-researcher-skill/SKILL.md` | Complete skill definition (source of truth) |
+| `skills/mcp-attribute-validator/SKILL.md` | CSV validation skill (9 rules, 6 phases) |
 | `skills/mcp-researcher-skill/references/learned-fixes.md` | Error case studies |
 | `skills/mcp-researcher-skill/references/multi-server.md` | Batch research workflow |
 | `skills/mcp-researcher-skill/references/csv-example.md` | CSV formatting reference |
-| `optimization_guide.md` | Full v3.0 optimization reference |
+| `skills/mcp-researcher-skill/references/cost-script.py` | Token cost calculator |
 | `marketplace.json` | Skills metadata and discovery |
 
 ---
 
-Made with Claude Code | Version: 3.0.0 | Last Updated: 2026-03-27 | Status: Production Ready
+Made with Claude Code | Version: 3.1.0 | Last Updated: 2026-04-07 | Status: Production Ready
