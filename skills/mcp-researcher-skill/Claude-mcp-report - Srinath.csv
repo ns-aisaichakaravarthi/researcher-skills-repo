@@ -1,0 +1,290 @@
+Category,Attribute,MCP server 1,MCP server 2,MCP server 3,MCP server 4,MCP server 5,MCP server 6 ,MCP server 7,MCP server 8,MCP server 9,MCP server 10,MCP server 11,MCP server 12,MCP server 13,MCP server 14
+MCP Server Name,,StackOne Connectors (Disco.dev),Keeper Secrets Manager,MercadoPago,TrackMage,Odos,Croit Ceph,Axiom,Jira Service Management (CData),eBay (CData JDBC),Stadia Maps MCP,,,,
+MCP Info,Description,"Pre-built MCP connectors framework for 50+ popular SaaS tools including GitHub, Slack, Jira, Linear, Notion, Asana, Google Drive, HubSpot, and more. TypeScript/Zod-based library powering the disco.dev platform. Supports both Tools and Resources capabilities with per-connector credential management. Runs on Bun, Node, and Cloudflare Workers via a stateless StreamableHTTP server.","A secure intermediary between AI language models and Keeper Secrets Manager (KSM) enabling AI agents to perform secrets management tasks including listing, retrieving, searching, creating, updating, and deleting secrets and folders. Supports file attachments via upload and download, password generation with TOTP code retrieval, and confirmation workflows for sensitive write operations to safeguard enterprise application credentials.","A hosted Model Context Protocol server enabling developers to interact with MercadoLibre APIs using natural language, simplifying product integrations and task automation across Latin America's largest e-commerce marketplace. Accessible via a remote HTTPS endpoint with Bearer token authentication and supports MercadoLibre developer API resources and utilities.","A Model Context Protocol server integrating with the TrackMage API for shipment tracking and logistics management across 1600+ carriers worldwide. Provides tools for creating and managing shipments and orders, retrieving tracking checkpoints, detecting carriers from tracking numbers, and listing available carriers and workspace orders. Supports OAuth 2.1 client credentials authentication via STDIO transport.","A Model Context Protocol client for interacting with the Odos DEX aggregation platform and Zerion portfolio analytics across multiple blockchain networks. Provides tools for retrieving swap and zap quotes, token pricing, supported chain and liquidity source data, wallet portfolio composition, historical transactions, gas price estimates, and smart contract information. Odos tools require no authentication while Zerion portfolio tools require a ZERION_API_KEY.","A Model Context Protocol server for managing Ceph clusters through the Croit REST API using natural language commands. Dynamically generates tools from Croit's extensive OpenAPI specifications, enabling cluster management across services, pools, servers, and S3 object storage with log search capabilities and automatic token optimization that reduces AI processing costs by 80-95%.","A Model Context Protocol server for querying Axiom observability and log analytics data using Axiom Processing Language (APL). Provides tools to execute APL queries against datasets, retrieve dataset schemas, access saved queries, and view monitoring configurations and execution history. Note: this repository is archived and no longer maintained as of March 2026; users should migrate to the official Axiom MCP server at mcp.axiom.co.",Jira Service Management MCP Server by CData provides read-only access to live Jira Service Management data through natural language queries using CData JDBC Driver. Exposes JSM data as SQL-queryable tables via MCP.,eBay MCP Server by CData provides read-only access to live eBay data through natural language queries using CData JDBC Driver for eBay. Exposes eBay data as SQL-queryable tables via MCP interface.,"Stadia Maps MCP Server provides AI assistants with access to Stadia Maps APIs for location intelligence including geocoding, routing, isochrone analysis, and static map generation. It exposes six tools covering time zone queries, forward and bulk geocoding, route overviews with encoded polylines, reachability contours, and PNG map image rendering with markers and route overlays.",,,,
+MCP Info,Git Repo Version,mcp-connectors-v0.0.25,v2.3.0,No,0.1.0,0.1.0,v0.4.4,v0.0.5,NA,NA,No,,,,
+MCP Info,Category,Developer Tools,Developer Tools,Developer Tools,Developer Tools,Developer Tools,Developer Tools,Developer Tools,Data Retrieval,Data Retrieval,Data Retrieval,,,,
+MCP Info,GitHub Repository,https://github.com/StackOneHQ/mcp-connectors,https://github.com/Keeper-Security/keeper-mcp-golang-docker,https://github.com/mercadolibre/mercadolibre-mcp-server,https://github.com/trackmage/trackmage-mcp-server,https://github.com/odos-xyz/odos-mcp,https://github.com/croit/mcp-croit-ceph,https://github.com/axiomhq/axiom-mcp,https://github.com/CDataSoftware/jira-service-management-mcp-server-by-cdata,https://github.com/cdatasoftware/ebay-mcp-server-by-cdata,https://github.com/stadiamaps/stadiamaps-mcp-server-ts,,,,
+MCP Info,Endpoint URL,N/A,N/A,https://mcp.mercadolibre.com/mcp,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,,,
+Distribution Type,Official,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,,,,
+Distribution Type,Community,No,No,No,No,No,No,No,No,Yes,No,,,,
+MCP Protocol Version,2025-11-25,Yes,No,No,Yes,No,No,No,No,No,Yes,,,,
+MCP Protocol Version,2025-06-18,No,No,No,No,No,No,No,No,No,No,,,,
+MCP Protocol Version,2025-03-26,No,No,No,No,No,No,No,No,No,No,,,,
+MCP Protocol Version,2024-11-05,No,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,No,,,,
+Pricing,Free,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,,,,
+Pricing,Paid,No,No,No,No,No,No,No,No,No,No,,,,
+Hosting Provider,SaaS Vendor,Yes,No,Yes,No,No,No,No,No,No,No,,,,
+Hosting Provider,3rd Party SaaS,No,No,No,No,No,No,No,No,No,No,,,,
+Hosting Provider,GitHub,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,,,,
+Hosting Provider,GitLab,No,No,No,No,No,No,No,No,No,No,,,,
+Hosting Provider,Bitbucket,No,No,No,No,No,No,No,No,No,No,,,,
+Hosting Provider,SourceHut/Gitea/Gogs,No,No,No,No,No,No,No,No,No,No,,,,
+Authentication,OAuth 2.1 - Authorization Code Flow,No,No,No,No,No,No,No,No,Yes,No,,,,
+Authentication,OAuth 2.1 - Client Credentials Flow,No,No,No,Yes,No,No,No,No,No,No,,,,
+Authentication,Bearer Token,No,No,Yes,Yes,No,Yes,No,No,No,No,,,,
+Authentication,Personal Access Token,No,No,No,No,No,No,No,No,No,No,,,,
+Authentication,API Token,No,Yes,Yes,No,Yes,Yes,Yes,No,No,Yes,,,,
+Data Protection,TLS 1.3,No,No,Yes,No,No,No,No,No,No,No,,,,
+Data Protection,TLS 1.2,No,No,No,No,No,No,No,No,No,No,,,,
+Data Protection,Lower versions or no encryption,No,No,No,No,No,No,No,No,Yes,Yes,,,,
+Transport Protocol,STDIO,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,,,,
+Transport Protocol,HTTP/SSE,No,No,No,No,No,No,No,No,No,No,,,,
+Transport Protocol,StreamableHttp,Yes,No,Yes,No,No,No,No,No,No,No,,,,
+Transport Protocol,FastAPI,No,No,No,No,No,No,No,No,No,No,,,,
+Tools Operations,Read-only operations,No,No,Yes,No,Yes,No,Yes,Yes,Yes,Yes,,,,
+Tools Operations,Read-only and/or update operations,No,No,No,Yes,No,No,No,No,No,No,,,,
+Tools Operations,Read-only update and/or delete operations,Yes,Yes,No,No,No,Yes,No,No,No,No,,,,
+Deployment Approach,Local,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,,,,
+Deployment Approach,Container,No,Yes,No,Yes,No,Yes,No,No,No,No,,,,
+Deployment Approach,Remote,No,No,Yes,No,No,No,No,No,No,No,,,,
+Compliance & Certifications,HIPAA,No,No,No,No,No,No,No,No,No,No,,,,
+Compliance & Certifications,GDPR,No,No,No,No,No,No,No,No,No,No,,,,
+Compliance & Certifications,SOC 2,No,No,No,No,No,No,No,No,No,No,,,,
+Compliance & Certifications,FedRAMP,No,No,No,No,No,No,No,No,No,No,,,,
+Capabilities,Tools,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,,,,
+Capabilities,Resources,Yes,No,No,No,No,No,No,Yes,Yes,No,,,,
+Capabilities,Prompts,No,No,No,No,No,No,No,No,No,No,,,,
+Capabilities,Sampling,No,No,No,No,No,No,No,No,No,No,,,,
+Capabilities - Tools,detailed_info,"Search & Query Utilities
+  • github_get_repository – Get information about a specific GitHub repository
+  • github_list_repositories – List repositories for a user, organization, or authenticated user
+  • github_list_issues – List issues for a repository
+  • github_get_issue – Get details of a specific issue
+  • github_list_pull_requests – List pull requests for a repository
+  • github_get_pull_request – Get details of a specific pull request
+  • slack_get_channel_history – Get message history from a Slack channel
+  • slack_get_thread_replies – Get replies in a message thread
+  • notion_get_page – Get a Notion page by ID
+  • notion_list_users – List all users in a Notion workspace
+  • notion_search – Search Notion pages and databases
+  • notion_list_databases – List all Notion databases
+  • notion_get_database – Get details of a Notion database
+  • notion_query_database – Query a Notion database with filters
+  • notion_get_block_children – Get child blocks of a Notion block
+  • search_issues – Search Linear issues with filters
+  • get_user_issues – Get issues assigned to the authenticated Linear user
+  • get_organization – Get Linear organization details
+  • get_viewer – Get current authenticated Linear user
+
+Issue Management
+  • github_create_issue – Create a new issue in a GitHub repository
+  • create_issue – Create a new Linear issue
+  • update_issue – Update an existing Linear issue
+  • add_comment – Add a comment to a Linear issue
+
+Project Management
+  • notion_create_page – Create a new Notion page
+  • notion_update_page – Update an existing Notion page (supports archive/delete via archived field)
+  • notion_create_database – Create a new Notion database
+  • notion_append_block_children – Append child blocks to a Notion block
+  • notion_create_comment – Create a comment on a Notion page
+
+Team & Workspace Metadata
+  • notion_get_me – Get the current authenticated Notion user
+  • slack_get_channel_history – Get message history from a Slack channel
+
+Other
+  • slack_post_message – Post a message to a Slack channel
+  • slack_add_reaction – Add a reaction to a Slack message
+  • slack_get_thread_replies – Get replies in a message thread
+  (+ 350+ additional tools across 50 connectors: Asana, Attio, AWS, Datadog, Deel, Deepseek, DuckDuckGo, ElevenLabs, Exa, Fal, GitLab, Google Drive, Google Maps, Graphy, HiBob, HubSpot, Incident, Fireflies, Jira, Langsmith, LinkedIn, Pydantic Logfire, Modal, 1Password, Parallel, Perplexity, PostHog, ProductHunt, Pylon, Replicate, Retool, RideWithGPS, Sequential Thinking, Strava, Supabase, TFL, Tinybird, Todoist, TodoList, Turbopuffer, Wandb, Xero, Zapier)","Search & Query Utilities
+  • list_secrets – List accessible secret metadata
+  • get_secret – Retrieve specific secret details with optional field masking
+  • search_secrets – Query secrets by title, notes, or content
+  • list_folders – Display accessible folder hierarchy
+  • get_server_version – Retrieve server version information
+  • health_check – Verify server operational status
+ 
+
+ Admin & Miscellaneous
+  • get_totp_code – Retrieve current TOTP code for a secret
+  • generate_password – Generate a secure password with optional direct-to-secret save
+ 
+
+ Other
+  • create_secret – Add a new secret to the vault
+  • update_secret – Modify an existing secret
+  • delete_secret – Remove a secret from the vault
+  • create_folder – Create a new folder in a shared parent location
+  • delete_folder – Remove a folder with optional force-delete
+  • upload_file – Attach a file to a secret
+  • download_file – Retrieve a file attachment from a secret","Other
+  • Tools not publicly documented in repository README. Server provides utilities for MercadoLibre API interaction including product and marketplace integrations.","Search & Query Utilities
+  • list_shipments – Retrieve all shipments in the workspace
+  • list_orders – Fetch all orders in the workspace
+  • list_carriers – Display available carrier options
+  • get_shipment_checkpoints – Retrieve tracking event history for a shipment
+  • detect_carrier – Identify probable carriers matching a given tracking number
+
+Other
+  • create_shipment – Create a new shipment record with tracking number
+  • update_shipment – Modify an existing shipment's data and status
+  • create_order – Generate a new order entry in the workspace
+  • update_order – Change an order's information and status
+  • retrack_shipments – Refresh tracking data for multiple shipments","Search & Query Utilities
+  • get_supported_chains – List all supported blockchain networks on Odos
+  • get_supported_tokens – Retrieve tradeable tokens for a given chain
+  • get_token_price – Get real-time price data for a specific token
+  • get_chain_token_prices – Retrieve bulk token prices across a blockchain network
+  • get_currencies – Provide fiat currency exchange rate data
+  • get_router_address – Return the Odos router contract address for a chain
+  • get_current_block – Get the current block number for a blockchain network
+  • get_liquidity_sources – List available DEX liquidity sources on Odos
+  • get_contract_info – Supply smart contract details and metadata
+  • get_wallet_portfolio – Show portfolio holdings and composition for a wallet
+  • get_past_transactions – Retrieve and analyze historical wallet transactions
+  • get_past_performance – Track portfolio performance over time
+  • get_gas_prices – Estimate current network gas prices
+
+Other
+  • get_quote_swap – Retrieve swap quotes and transaction data for token exchanges
+  • get_quote_zap – Provide zap quotes for liquidity provision operations","Search & Query Utilities
+  • list_endpoints – List all available API endpoints from the Croit OpenAPI spec
+  • search_last_result – Search within the last API call result
+  • croit_log_search – Search Ceph and Croit log entries by keyword or pattern
+  • croit_log_check – Check recent logs for errors and warnings
+
+Admin & Miscellaneous
+  • manage_services – Manage Ceph services including start, stop, and status operations
+  • manage_pools – Manage Ceph storage pools including creation and configuration
+  • manage_servers – Manage Ceph server nodes and their configurations
+  • manage_s3 – Manage S3-compatible object storage buckets and access keys
+
+Other
+  • call_endpoint – Invoke any Croit REST API endpoint dynamically","Search & Query Utilities
+  • listDatasets – Retrieve all available datasets in the Axiom account
+  • getDatasetSchema – Obtain the field schema for a specific dataset
+  • getSavedQueries – Access starred and saved APL queries
+  • getMonitors – List all monitoring configurations
+  • getMonitorsHistory – Retrieve historical execution results for monitors
+
+Other
+  • queryApl – Execute an APL query against one or more Axiom datasets","Search & Query Utilities
+  • get_tables – Retrieves a list of objects, entities, collections, etc. (as tables) available in the data source
+  • get_columns – Retrieves a list of fields, dimensions, or measures (as columns) for an object, entity or collection (table)
+  • run_query – Execute a SQL SELECT statement","Search & Query Utilities
+  • {servername}_get_tables – Retrieves a list of tables available in the eBay data source
+  • {servername}_get_columns – Retrieves a list of columns for a specified table
+  • {servername}_run_query – Execute a SQL SELECT query against the eBay data source","Search & Query Utilities
+  • time-and-zone-info – Get current time and time zone info (UTC offset, IANA TZID, DST status) at any geographic coordinate
+  • geocode – Look up a street address, POI, or area including coordinates, bounding box, local context, population, opening hours, and more
+  • bulk-geocode – Perform multiple unstructured address geocoding operations in a single request, returning first result per item
+  • route-overview – Get high-level routing information between two or more locations including travel time, distance, and encoded polyline
+  • isochrone – Generate GeoJSON isochrone contours showing areas reachable within specified time or distance constraints from a location
+ 
+
+ Other
+  • static-map – Generate a PNG map image of an area with optional markers, route overlays, and customizable style",,,,
+Capabilities - Resources,detailed_info,"Resources are supported per connector (verified in apps/server/src/index.ts via server.resource() calls). disco.dev reports 388+ Tools & Resources total across all 50 connectors. Specific resource URIs vary by connector. Example connector resources expose read-only data endpoints (e.g., repository metadata, user profiles, configuration data) accessible via MCP resource URIs.",None,None,None,None,None,None,• {mcpScheme}/{tableName} – List of columns for table (resource type: text),"• {prefix}://{tablePath} – Table column schema resource returning catalog, schema, table, column name, and data type as text/csv (one resource registered per available eBay table)",None,,,,
+Capabilities - Prompts,detailed_info,None,None,None,None,None,None,None,None,None,None,,,,
+Capabilities - Sampling,detailed_info,None,None,None,None,None,None,None,None,None,None,,,,
+Non-Read-Only Tools,detailed_info,"Content Management
+  • github_create_issue: Create a new issue in a GitHub repository
+  • notion_create_page: Create a new Notion page
+  • notion_update_page: Update a Notion page (set archived=true to archive/delete)
+  • notion_create_database: Create a new Notion database
+  • notion_create_comment: Create a comment on a Notion page
+  • notion_append_block_children: Append child blocks to a Notion block
+
+Other Write Operations
+  • create_issue: Create a new Linear issue
+  • update_issue: Update an existing Linear issue
+  • add_comment: Add a comment to a Linear issue
+  • slack_post_message: Post a message to a Slack channel
+  • slack_add_reaction: Add a reaction emoji to a Slack message
+  (+ write/delete operations across remaining 40+ connectors including Asana, Jira, HubSpot, Todoist, Zapier, etc.)","Content Management
+  • create_secret: Add a new secret to the vault
+  • update_secret: Modify an existing secret's fields or value
+  • delete_secret: Remove a secret from the vault
+  • create_folder: Create a new folder in a shared parent location
+  • delete_folder: Remove a folder with optional force-delete flag
+ 
+
+ Import/Export Tools
+  • upload_file: Attach a file to an existing secret
+  • download_file: Retrieve and download a file attachment from a secret",None,"Content Management
+  • create_shipment: Create a new shipment record with tracking number
+  • update_shipment: Modify an existing shipment's data and status
+  • create_order: Generate a new order entry in the workspace
+  • update_order: Change an order's information and status
+
+Other Write Operations
+  • retrack_shipments: Refresh and update tracking data for multiple shipments",None,"Configuration Tools
+  • manage_services: Start, stop, restart, and configure Ceph services
+  • manage_pools: Create, modify, and delete Ceph storage pools
+  • manage_servers: Add, configure, and remove Ceph server nodes
+  • manage_s3: Create and delete S3 buckets and manage access keys
+
+Other Write Operations
+  • call_endpoint: Invoke any Croit REST API endpoint including write and delete operations",None,None,None,None,,,,
+,,"MCP Server     : mcp-connectors
+Date           : 2026-03-27 11:38:32
+Model          : claude-sonnet-4-6
+
+Token Usage
+  Input        : 35,993
+  Output       : 8,794
+  Cache Read   : 3,197,970
+
+Cost
+  Input        : $0.1080  (35,993 x $3.00/1M)
+  Output       : $0.1319  (8,794 x $15.00/1M)
+  Cache Read   : $0.9594  (3,197,970 x $0.30/1M)
+  Total        : $1.1993
+","Server 2-7 : 6 server (keeper, mercadolibre, trackmage, odos, croit, axiom)
+Date                : 2026-03-27 12:19:37
+Model               : claude-sonnet-4-6
+
+Token Usage
+  Input             : 239
+  Output            : 69,960
+  Cache Read        : 21,183,863
+
+Cost
+  Input             : $0.0007  (239 × $3.00/1M)
+  Output            : $1.0494  (69,960 × $15.00/1M)
+  Cache Read        : $6.3552  (21,183,863 × $0.30/1M)
+  Total             : $7.4053
+
+Reports Saved
+  keeper-mcp-golang-docker.csv
+  mercadolibre-mcp-server.csv
+  trackmage-mcp-server.csv
+  odos-mcp.csv
+  mcp-croit-ceph.csv
+  axiomhq-mcp.csv",,,,,,"MCP Server     : jira-service-management-mcp-server-by-cdata
+Date           : 2026-03-27 16:19:42
+Model          : claude-sonnet-4-6
+
+Token Usage
+  Input        : 1,341
+  Output       : 11,740
+  Cache Read   : 1,966,350
+
+Cost
+  Input        : $0.0040  (1,341 x $3.00/1M)
+  Output       : $0.1761  (11,740 x $15.00/1M)
+  Cache Read   : $0.5899  (1,966,350 x $0.30/1M)
+  Total        : $0.7700
+","MCP Research Session Cost Report
+=================================
+Server: ebay-mcp-server-by-cdata
+Date: 2026-03-27
+Model: us.anthropic.claude-sonnet-4-6
+Research Start: 2026-03-27T10:18:55
+Research End:   2026-03-27T10:24:46
+
+Token Usage
+-----------
+Input tokens:             333
+Output tokens:         12,781
+Cache read tokens:  1,947,013
+
+Cost Breakdown
+--------------
+Input:      $0.0010
+Output:     $0.1917
+Cache read: $0.5841
+-----------
+TOTAL:      $0.7768
+",,,,,
